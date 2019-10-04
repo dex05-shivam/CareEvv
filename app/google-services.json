@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "199543616425",
+    "firebase_url": "https://careevv-89b7b.firebaseio.com",
+    "project_id": "careevv-89b7b",
+    "storage_bucket": "careevv-89b7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199543616425:android:3fdc9040622803c26f4ab8",
+        "android_client_info": {
+          "package_name": "care.example.careevv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199543616425-2293hir11k1ih5f1r0tthkeu7rlop5l8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTny_b7AvkVUb3MFVgHwvXzZ_DqnYvwpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199543616425-2293hir11k1ih5f1r0tthkeu7rlop5l8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "199543616425-gd5ajvvc344kckel76vd4clrs8hdc99l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.USACareEvv.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/space_10"
+    android:layout_marginRight="@dimen/space_10"
+    android:layout_marginTop="@dimen/space_5"
+    android:layout_marginBottom="@dimen/space_5"
+    android:elevation="@dimen/space_5"
+    app:cardCornerRadius="@dimen/space_25"
+    android:padding="@dimen/space_10"
+    app:cardElevation="@dimen/space_5"
+    android:orientation="horizontal">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_main"
+    android:background="@null"
+
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/space_20"
+        android:background="@null"
+        android:layout_height="@dimen/space_20"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_5"
+        android:src="@drawable/logo" /><!--Make sure image is present in Drawable folder-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Demo"
+        android:background="@null"
+        android:textColor="@color/blue_secondry" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

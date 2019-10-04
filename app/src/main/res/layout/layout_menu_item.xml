@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/space_250"
+    android:background="@drawable/edit_text2"
+    android:layout_marginLeft="@dimen/space_20"
+    android:layout_marginRight="@dimen/space_20"
+    android:layout_marginTop="@dimen/space_5"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="@dimen/space_5"
+    android:elevation="@dimen/space_5"
+    android:layout_height="wrap_content"
+  >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/space_50"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+
+
+   >
+
+
+    <ImageView
+        android:layout_marginLeft="@dimen/space_20"
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:tint="@color/blue_secondry"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/dark_black"
+        android:layout_toRightOf="@+id/icon"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="@dimen/space_15"
+        android:layout_height="@dimen/space_15"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/title"
+        android:text="20"
+        android:textSize="@dimen/space_10"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/color_3" />
+
+
+</RelativeLayout>
+
+</LinearLayout>

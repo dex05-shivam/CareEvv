@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="care.example.careevv.fragment.SettingsFragment"
+
+    android:background="@color/light_gray">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/space_3"
+        app:cardElevation="@dimen/space_5"
+
+        android:layout_margin="@dimen/space_15">
+
+        <LinearLayout
+            android:background="@drawable/side_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|left"
+            android:gravity="bottom|left"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/password_layout"
+                android:layout_width="@dimen/space_180"
+                android:layout_height="@dimen/space_50"
+                android:background="@drawable/edit_text_job"
+                android:layout_marginTop="90sp"
+                android:layout_marginLeft="@dimen/space_50"
+                android:layout_marginRight="@dimen/space_120"
+                android:elevation="@dimen/space_5"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:src="@drawable/padlock"/>
+
+                <TextView
+                    android:id="@+id/pass_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="@string/change_password"
+                    android:textColor="@color/blue_secondry"
+                    android:textSize="@dimen/space_10"
+                    app:fontFamily="@font/poppins_medium" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/space_150"
+                android:id="@+id/lang_layout"
+                android:layout_width="@dimen/space_180"
+                android:layout_height="@dimen/space_50"
+                android:background="@drawable/edit_text_job"
+                android:layout_marginTop="@dimen/space_20"
+                android:elevation="@dimen/space_5"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space_50"
+                android:layout_marginRight="@dimen/space_120"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:src="@drawable/translation"/>
+
+                <TextView
+                    android:id="@+id/lang_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="Chnage Language"
+                    android:textColor="@color/blue_secondry"
+                    android:textSize="@dimen/space_10"
+                    app:fontFamily="@font/poppins_medium" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    
+
+</LinearLayout>

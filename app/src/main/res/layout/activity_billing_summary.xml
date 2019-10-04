@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="70dp"
+                android:background="@drawable/button_touch_orange_rect"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageButton
+                        android:id="@+id/login_back"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/back_arrow"
+                        android:background="@null"
+                        android:tint="#fff"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="SHivam sir"
+                        android:textColor="#fff"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/poppins_medium" />
+
+
+
+
+
+                </RelativeLayout>
+
+<!--                de.hdodenhof.circleimageview.Circle-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sign_up_icon"
+                     android:layout_margin="15dp"
+                    android:layout_height="110dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/billing_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="15dp"
+                    android:text="Summary"
+                    android:textColor="@color/blue_secondry"
+                    android:textSize="@dimen/space_20"
+                    app:fontFamily="@font/poppins_semibold" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/date_title"
+                        android:layout_width="match_parent"
+                        android:text="Date"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        app:fontFamily="@font/poppins_semibold"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text=":"
+                        android:textSize="18dp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="22 May 2019"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/poppins" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="15dp"
+                    android:background="#ddd"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Start Time"
+                        android:textSize="18dp"
+                        android:id="@+id/start_time_title"
+                        android:layout_weight="1"
+                        app:fontFamily="@font/poppins_semibold"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text=":"
+                        android:textSize="18dp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="11:00 AM"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/poppins" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="15dp"
+                    android:background="#ddd"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/end_time_title"
+                        android:layout_width="match_parent"
+                        android:text="End Time"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/poppins_semibold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text=":"
+                        android:textSize="18dp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2:00 PM"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/poppins" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="15dp"
+                    android:background="#ddd"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/total_time_title"
+                        android:layout_width="match_parent"
+                        android:text="Total Time"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        app:fontFamily="@font/poppins_semibold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text=":"
+                        android:textSize="18dp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3 Hour, 00 Min"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/poppins" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="15dp"
+                    android:background="#ddd"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/total_unit_title"
+                        android:layout_width="match_parent"
+                        android:text="Toal Unit"
+                        android:textSize="18dp"
+                        android:layout_weight="1"
+                        app:fontFamily="@font/poppins_semibold"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text=":"
+                        android:textSize="18dp"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_total_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="22"
+                        android:textSize="18dp"
+                        app:fontFamily="@font/poppins" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="15dp"
+                    android:background="#ddd"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:id="@+id/sign_button"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:elevation="@dimen/space_5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_touch_blue_rect"
+            android:layout_height="@dimen/space_50">
+
+
+            <TextView
+                android:id="@+id/close_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:fontFamily="@font/poppins_semibold"
+                android:text="Close"
+                android:textSize="@dimen/space_18"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

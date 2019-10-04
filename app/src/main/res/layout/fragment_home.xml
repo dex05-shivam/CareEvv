@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60"
+            android:layout_marginLeft="@dimen/space_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_month_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Month / Year"
+                android:textColor="@color/black_shade"
+                android:textSize="@dimen/space_18"
+                app:fontFamily="@font/poppins_semibold" />
+
+            <ImageView
+                android:id="@+id/select_month_year"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/space_25"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_35"
+                android:src="@drawable/calendar"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#ccc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_20"
+                android:src="@drawable/ic_chevron_left_black_24dp"
+                android:layout_gravity="center_vertical"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/date_recycler"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+            <ImageView
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_20"
+                android:src="@drawable/ic_chevron_right_black_24dp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/no_data_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/space_25"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginBottom="@dimen/space_10"
+        android:id="@+id/recyclerView"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+    <include layout="@layout/check_internet" />
+
+</LinearLayout>

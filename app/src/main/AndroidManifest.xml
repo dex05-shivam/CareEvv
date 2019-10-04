@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="care.example.careevv">
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <permission
+        android:name="android.permission.CALL_PRIVILEGED"
+        android:protectionLevel="signature|privileged" />
+
+    <supports-screens
+        android:largeScreens="false"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="false"
+        />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <application
+        android:name="care.example.careevv.util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/korevv"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/korevv"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:exported="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name="care.example.careevv.activity.NotificationActivity"
+            android:theme="@style/AppTheme1"
+            android:screenOrientation="portrait"  ></activity>
+        <activity
+            android:name="care.example.careevv.activity.BillingSummaryOnInternet"
+            android:theme="@style/AppTheme1"
+            android:screenOrientation="portrait"  />
+
+        <service android:name="care.example.careevv.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="care.example.careevv.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- ./Firebase Notifications -->
+
+        <activity
+            android:name="care.example.careevv.activity.ForgotPassword"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="care.example.careevv.activity.ClockOutActivity"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="care.example.careevv.activity.ChangePassword"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="care.example.careevv.activity.ChangeLanguageActivity"
+            android:theme="@style/AppTheme1"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="care.example.careevv.activity.BillingSummaryActivity"
+            android:theme="@style/AppTheme1"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="care.example.careevv.activity.ObservationActivity"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="care.example.careevv.activity.ScheduleActivity"
+            android:theme="@style/AppTheme.GradientStatusBar"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="care.example.careevv.activity.LoginActivity"
+            android:theme="@style/AppTheme1"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait"  />
+        <activity
+            android:name="care.example.careevv.activity.SplaseActivity"
+            android:theme="@style/AppTheme1"
+            android:screenOrientation="portrait"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="care.example.careevv.MainActivity"
+            android:theme="@style/AppTheme1"
+            android:screenOrientation="portrait"  />
+
+        <receiver
+            android:name="care.example.careevv.util.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+    </application>
+
+</manifest>
